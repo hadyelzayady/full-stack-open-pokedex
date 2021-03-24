@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-let url="http://localhost:5000"
+let url='http://localhost:5000'
 describe('Pokedex', function () {
   it('front page can be opened', function () {
     cy.visit(url)
