@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
-
+console.log("hellloooooooooooooooo")
+console.log(process.env)
 // Heroku dynamically sets a port
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 5000
