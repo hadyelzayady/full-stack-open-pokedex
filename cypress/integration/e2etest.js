@@ -9,7 +9,7 @@ describe('Pokedex', function () {
     )
   })
   it('pokemon page can be opened', function () {
-    cy.visit(`${url}/pokemon/machoke`)
+    cy.visit(`${url}/pokemon/ivysaur`)
     cy.contains('defense')
   })
 })

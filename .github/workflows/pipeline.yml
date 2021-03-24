@@ -24,6 +24,8 @@ jobs:
       - name: build
         run: |
           npm run build
+        env:
+          PORT: 8080
 
       - name: test
         run: |
