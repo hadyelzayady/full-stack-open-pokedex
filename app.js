@@ -14,6 +14,9 @@ app.get('/version', (req, res) => {
   res.send('1')
 })
 
+app.get('/new', (req, res) => {
+  res.send('new feature')
+})
 app.use(express.static('dist'))
 
 
