@@ -25,11 +25,15 @@ jobs:
         run: |
           npm run build
         env:
-          PORT: 8080
+          PORT: 5000
 
       - name: test
         run: |
           npm run test
+
+      - name: wget the home page
+        run: |
+          wget http://localhost:5000
 
       - name: cypress tests
         uses: cypress-io/github-action@v2
