@@ -44,3 +44,4 @@ jobs:
           heroku_app_name: "glacial-thicket-33219"
           heroku_email: "hadyelzayady@yahoo.com"
           healthcheck: "https://glacial-thicket-33219.herokuapp.com/health"
+          rollbackonhealthcheckfailed: true
