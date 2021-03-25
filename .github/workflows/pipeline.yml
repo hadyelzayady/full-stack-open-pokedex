@@ -31,10 +31,6 @@ jobs:
         run: |
           npm run test
 
-      - name: wget the home page
-        run: |
-          wget http://localhost:5000
-
       - name: cypress tests
         uses: cypress-io/github-action@v2
         with:

@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-let url='http://localhost:5000'
+let url='http://localhost:8080'
 describe('Pokedex', function () {
   it('front page can be opened', function () {
     cy.visit(url)
@@ -9,7 +9,7 @@ describe('Pokedex', function () {
     )
   })
   it('pokemon page can be opened', function () {
-    cy.visit('http://localhost:5000/pokemon/ivysaur')
+    cy.contains('ivysaur').click()
     cy.contains('chlorophyll')
   })
 })
