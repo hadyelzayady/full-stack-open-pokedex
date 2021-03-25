@@ -49,7 +49,9 @@ jobs:
           heroku_email: "hadyelzayady@yahoo.com"
           healthcheck: "https://glacial-thicket-33219.herokuapp.com/health"
           rollbackonhealthcheckfailed: true
-      - name: Bump version and push tag
+
+      - if: ${{ github.event_name == 'push' }}
+        name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.33.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
